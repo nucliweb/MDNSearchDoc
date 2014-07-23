@@ -1,15 +1,22 @@
 import sublime_plugin
 import re
+import sublime
 import webbrowser
 
 
 PATTERN = re.compile(r'([a-z-]+)', re.IGNORECASE)
-URL = 'https://developer.mozilla.org/en-US/search?q='
-
+URL_DOMAIN = 'https://developer.mozilla.org/'
+URL_SEARCH = '/search?q='
 
 class MdnDocCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
+        
+        #get settings
+        settings = sublime.load_settings('MdnSearchDoc.sublime-settings')
+        LANGUAGE = settings.get("language")
+
+        #each of selections
         for region in self.view.sel():
             # Get the start point of the region of the selection
             point = region.begin()
@@ -34,4 +41,4 @@ class MdnDocCommand(sublime_plugin.TextCommand):
 
             print(webbrowser._tryorder)
             print(webbrowser._browsers.items())
-            webbrowser.open_new_tab(URL + search)
+            webbrowser.open_new_tab(URL_DOMAIN + LANGUAGE + URL_SEARCH + search)

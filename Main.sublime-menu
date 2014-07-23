@@ -18,7 +18,7 @@
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/MdnSearchDoc/MdnSearchDoc.sublime-settings"
+                                    "file": "${packages}/MDN Serach Doc/MdnSearchDoc.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
@@ -33,7 +33,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/MdnSearchDoc/Default.sublime-keymap"
+                                    "file": "${packages}/MDN Serach Doc/Default.sublime-keymap"
                                 },
                                 "caption": "Key Bindings – Default"
                             },

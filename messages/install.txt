@@ -1,0 +1,17 @@
+MDN Search Doc
+==============
+
+Sublime Text MDN Search Doc is a plugin allows you to consult the documentation in the Mozilla Developer Network.
+
+
+Customization
+=============
+
+Include this in the user key binding to overwrite default behaviour
+
+    { "keys": ["ctrl+alt+m"], "command": "mdn_doc" }
+
+Usage
+=====
+
+Mark or place your cursor over a css property and use the shortcut to open a new tab on you webbrowser with the info.

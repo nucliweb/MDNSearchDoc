@@ -14,7 +14,12 @@ class MdnDocCommand(sublime_plugin.TextCommand):
         
         #get settings
         settings = sublime.load_settings('MdnSearchDoc.sublime-settings')
-        LANGUAGE = settings.get("language")
+        language_settings = settings.get("language")
+
+        if len(language_settings) == 0:
+            LANGUAGE = language_settings
+        else:
+            LANGUAGE = "en-US"
 
         #each of selections
         for region in self.view.sel():

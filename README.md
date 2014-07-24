@@ -35,7 +35,7 @@ FAQ
 	Go to:
 
     ```
-    Sublime Text  -> Preferences -> Package Settings -> MdnSearchDoc -> Key Bindings - User
+    Sublime Text  -> Preferences -> Package Settings -> MDN Search Doc -> Key Bindings - User
     ```
 
     ```
@@ -50,7 +50,7 @@ FAQ
 2. How to change de default language for search in MDN?
 
     ```
-	Sublime Text -> Preferences -> Package Settings -> MdnSearchDoc -> Settings - User
+	Sublime Text -> Preferences -> Package Settings -> MDN Search Doc -> Settings - User
     ```
 
 	and add:

@@ -5,9 +5,19 @@ Sublime Text MDN Search Doc is a plugin allows you to consult the documentation 
 Customization
 =============
 
-Include this in the user key binding to overwrite default behaviour
+1. Include this in the user key binding to overwrite default behaviour
 
     { "keys": ["ctrl+alt+m"], "command": "mdn_doc" }
+
+
+2. Change the default language for search in MDN?
+
+	Sublime Text -> Preferences -> Package Settings -> MDN Search Doc -> Settings - User
+
+	and add:
+    
+	{ "language"   :  "en-US" }
+
 
 Usage
 =====

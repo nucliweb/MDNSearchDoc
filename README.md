@@ -1,5 +1,5 @@
-MDNSearchDoc
-============
+MDN Search Doc
+==============
 
 Sublime Text MDN Search Doc is a plugin allows you to consult the documentation in the Mozilla Developer Network [MDN](https://developer.mozilla.org/)
 
@@ -47,7 +47,7 @@ FAQ
     ```
 
 
-2. How to change de default language for search in MDN?
+2. How to change the default language for search in MDN?
 
     ```
 	Sublime Text -> Preferences -> Package Settings -> MDN Search Doc -> Settings - User

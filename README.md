@@ -20,8 +20,9 @@ Add this line to the User Keybindings
 Usage
 -----
 
-Mark or place your cursor over a css property and use the shortcut to open a new tab on you webbrowser with the info.
+Mark or place your cursor over a property and use the shortcut "ctrl+alt+m" or right click for context menu to open a new tab on you webbrowser with the info.
 
+![](https://raw.github.com/nucliweb/MDNSearchDoc/master/images/context-menu.png)
 
 Tip: Use multiple selection to display info on all selected elements.
 

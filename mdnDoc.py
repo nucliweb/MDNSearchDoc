@@ -11,15 +11,15 @@ URL_SEARCH = '/search?q='
 class MdnDocCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
-        
+
         #get settings
         settings = sublime.load_settings('MdnSearchDoc.sublime-settings')
         language_settings = settings.get("language")
 
         if len(language_settings) == 0:
-            LANGUAGE = language_settings
-        else:
             LANGUAGE = "en-US"
+        else:
+            LANGUAGE = language_settings
 
         #each of selections
         for region in self.view.sel():
@@ -35,7 +35,7 @@ class MdnDocCommand(sublime_plugin.TextCommand):
                 if re_search:
                     search = re_search.group()
                 search = search + '&topic=css'
-            
+
             # Javascript -----------------------------------------
             if "/JavaScript" in self.view.settings().get('syntax'):
                 search = search + '&topic=js'
